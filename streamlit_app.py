@@ -13,7 +13,7 @@ Algorithm_name = st.selectbox("select ML algorithm",("SVC","Logistic Regression"
 def get_dataset(data_set):
   if data_set == "heart attack":
     df = pd.readcsv("E:\heart data\heart.csv")
-  elif data_set = "Breast cancer" : 
+  elif data_set == "Breast cancer" : 
     df = datasets.load_breast_cancer()
   else :
     data = datasets.load_iris 
