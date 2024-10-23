@@ -20,12 +20,12 @@ st.title('Automation ML Classification App')
 st.write('Explore ML algorithms')
 
 
-data_set = st.selectbox("select dataset",("diabetes","Breast cancer","Wine"))
+data_set = st.selectbox("select dataset",("iris","Breast cancer","Wine"))
 Algorithm_name = st.selectbox("select ML algorithm",("SVM","Logistic Regression","Random forest"))
 
 def get_dataset(data_set):
-  if data_set == "diabetes":
-    df = datasets.load_diabetes()
+  if data_set == "iris":
+    df = datasets.load_iris()
   elif data_set == "Breast cancer" : 
     df = datasets.load_breast_cancer()
   else :
